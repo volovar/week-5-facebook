@@ -2,7 +2,7 @@
 
 The purpose of this homework is to leverage animations and gestures to transition between screens. We're going to use the techniques from this week to implement some interactions in Facebook.
 
-Time spent: `<Number of hours spent>`
+Time spent: `4 hours`
 
 ### Features
 

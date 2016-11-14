@@ -14,6 +14,14 @@
 		4C1D224C1DB9AEC60022BADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1D224A1DB9AEC60022BADD /* LaunchScreen.storyboard */; };
 		4C1D22571DB9AEC60022BADD /* facebook_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D22561DB9AEC60022BADD /* facebook_demoTests.swift */; };
 		4C1D22621DB9AEC60022BADD /* facebook_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D22611DB9AEC60022BADD /* facebook_demoUITests.swift */; };
+		4C1D22701DB9B1200022BADD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D226F1DB9B1200022BADD /* LoginViewController.swift */; };
+		4C4D13AB1DD579A70023C9F2 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D13AA1DD579A70023C9F2 /* TabViewController.swift */; };
+		4C4D13AE1DD57D8E0023C9F2 /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D13AD1DD57D8E0023C9F2 /* NewsFeedViewController.swift */; };
+		4C4D13B01DD5ADBE0023C9F2 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D13AF1DD5ADBE0023C9F2 /* ImageDetailViewController.swift */; };
+		4C4D13B31DD5C00F0023C9F2 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D13B11DD5C00F0023C9F2 /* BaseTransition.swift */; };
+		4C4D13B41DD5C00F0023C9F2 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D13B21DD5C00F0023C9F2 /* FadeTransition.swift */; };
+		4C4D13B71DD5C08D0023C9F2 /* ZoomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D13B61DD5C08D0023C9F2 /* ZoomTransition.swift */; };
+		4CCEDBA21DD9459E00E2C4E2 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEDBA11DD9459E00E2C4E2 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		4C1D225D1DB9AEC60022BADD /* facebook-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "facebook-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1D22611DB9AEC60022BADD /* facebook_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facebook_demoUITests.swift; sourceTree = "<group>"; };
 		4C1D22631DB9AEC60022BADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C1D226F1DB9B1200022BADD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4C4D13AA1DD579A70023C9F2 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		4C4D13AD1DD57D8E0023C9F2 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
+		4C4D13AF1DD5ADBE0023C9F2 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		4C4D13B11DD5C00F0023C9F2 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		4C4D13B21DD5C00F0023C9F2 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		4C4D13B61DD5C08D0023C9F2 /* ZoomTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomTransition.swift; sourceTree = "<group>"; };
+		4CCEDBA11DD9459E00E2C4E2 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				4C1D22411DB9AEC60022BADD /* AppDelegate.swift */,
-				4C1D22431DB9AEC60022BADD /* ViewController.swift */,
+				4C4D13B51DD5C0130023C9F2 /* Transitions */,
+				4C4D13AC1DD57AC60023C9F2 /* ViewControllers */,
 				4C1D22451DB9AEC60022BADD /* Main.storyboard */,
 				4C1D22481DB9AEC60022BADD /* Assets.xcassets */,
 				4C1D224A1DB9AEC60022BADD /* LaunchScreen.storyboard */,
@@ -123,6 +140,29 @@
 				4C1D22631DB9AEC60022BADD /* Info.plist */,
 			);
 			path = "facebook-demoUITests";
+			sourceTree = "<group>";
+		};
+		4C4D13AC1DD57AC60023C9F2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C1D22431DB9AEC60022BADD /* ViewController.swift */,
+				4C4D13AA1DD579A70023C9F2 /* TabViewController.swift */,
+				4C1D226F1DB9B1200022BADD /* LoginViewController.swift */,
+				4C4D13AF1DD5ADBE0023C9F2 /* ImageDetailViewController.swift */,
+				4C4D13AD1DD57D8E0023C9F2 /* NewsFeedViewController.swift */,
+				4CCEDBA11DD9459E00E2C4E2 /* TabBarViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4C4D13B51DD5C0130023C9F2 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				4C4D13B11DD5C00F0023C9F2 /* BaseTransition.swift */,
+				4C4D13B21DD5C00F0023C9F2 /* FadeTransition.swift */,
+				4C4D13B61DD5C08D0023C9F2 /* ZoomTransition.swift */,
+			);
+			name = Transitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +228,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Michael Volovar";
 				TargetAttributes = {
 					4C1D223D1DB9AEC60022BADD = {
@@ -259,8 +299,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C4D13AB1DD579A70023C9F2 /* TabViewController.swift in Sources */,
+				4C4D13B01DD5ADBE0023C9F2 /* ImageDetailViewController.swift in Sources */,
+				4C4D13B41DD5C00F0023C9F2 /* FadeTransition.swift in Sources */,
+				4C1D22701DB9B1200022BADD /* LoginViewController.swift in Sources */,
+				4C4D13B31DD5C00F0023C9F2 /* BaseTransition.swift in Sources */,
+				4C4D13B71DD5C08D0023C9F2 /* ZoomTransition.swift in Sources */,
 				4C1D22441DB9AEC60022BADD /* ViewController.swift in Sources */,
 				4C1D22421DB9AEC60022BADD /* AppDelegate.swift in Sources */,
+				4CCEDBA21DD9459E00E2C4E2 /* TabBarViewController.swift in Sources */,
+				4C4D13AE1DD57D8E0023C9F2 /* NewsFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +381,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -382,6 +431,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -503,6 +553,7 @@
 				4C1D22681DB9AEC60022BADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C1D22691DB9AEC60022BADD /* Build configuration list for PBXNativeTarget "facebook-demoTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +562,7 @@
 				4C1D226B1DB9AEC60022BADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C1D226C1DB9AEC60022BADD /* Build configuration list for PBXNativeTarget "facebook-demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +571,7 @@
 				4C1D226E1DB9AEC60022BADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

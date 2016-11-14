@@ -1,26 +1,420 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="facebook_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="7Vv-2y-O5M" userLabel="fieldSuperview">
+                                <rect key="frame" x="16" y="185" width="335" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="form_bg" id="WQM-Uw-Jaq">
+                                        <rect key="frame" x="20" y="20" width="295" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" id="QPB-9c-OOc">
+                                        <rect key="frame" x="29" y="32" width="277" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" id="rQX-GN-cDI">
+                                        <rect key="frame" x="29" y="70" width="277" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZsV-Tz-WXW">
+                                        <rect key="frame" x="21" y="121" width="292" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="login_button_enabled"/>
+                                        <connections>
+                                            <segue destination="bB7-pI-gVJ" kind="modal" modalTransitionStyle="crossDissolve" id="hxs-eD-HuF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="logo" id="FOc-4V-TkX">
+                                <rect key="frame" x="100" y="107" width="174" height="43"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="42h-m8-2Kt" userLabel="labelSuperview">
+                                <rect key="frame" x="39" y="567" width="297" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up for Facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fdq-Qn-4Kx">
+                                        <rect key="frame" x="45" y="16" width="206" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need Help?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3yq-Hj-fua">
+                                        <rect key="frame" x="45" y="50" width="206" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22662642598152161" green="0.34921520948410034" blue="0.59495401382446289" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="2pV-zh-UCQ" appends="YES" id="CKg-6h-3VO"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="fbLogoView" destination="FOc-4V-TkX" id="3ZR-z8-3d0"/>
+                        <outlet property="fieldSuperview" destination="7Vv-2y-O5M" id="WH7-Rr-ggS"/>
+                        <outlet property="labelSuperview" destination="42h-m8-2Kt" id="DnV-RE-1mo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="2pV-zh-UCQ">
+                    <connections>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="3NN-TP-H92"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="88.5" y="154.5"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="UB7-4U-xtY">
+            <objects>
+                <viewController id="A0o-1D-4Oh" customClass="TabViewController" customModule="facebook_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UHd-dm-yTq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="ytS-Qo-ew4">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="jac-0F-jau">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="-26" minY="24" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="23" minY="-16" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="News Feed" image="feed_tab">
+                                            <color key="titleColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" red="0.027450980392156862" green="0.396078431372549" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didPressTab:" destination="A0o-1D-4Oh" eventType="touchUpInside" id="Wh0-l4-PhM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="kgf-v4-YBp">
+                                        <rect key="frame" x="75" y="0.0" width="75" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="24" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Requests">
+                                            <color key="titleColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" red="0.027450980392156862" green="0.396078431372549" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didPressTab:" destination="A0o-1D-4Oh" eventType="touchUpInside" id="oYs-eg-TQ9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="GWf-PL-aI0">
+                                        <rect key="frame" x="150" y="0.0" width="75" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="-15" minY="24" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="26" minY="-10" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Message" image="comment_btn">
+                                            <color key="titleColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" red="0.027450980392156862" green="0.396078431372549" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didPressTab:" destination="A0o-1D-4Oh" eventType="touchUpInside" id="PcA-AW-0GR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="tQW-dz-Yr3">
+                                        <rect key="frame" x="225" y="0.0" width="75" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="24" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Notifications">
+                                            <color key="titleColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" red="0.027450980392156862" green="0.396078431372549" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didPressTab:" destination="A0o-1D-4Oh" eventType="touchUpInside" id="x2C-AJ-mF1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="06x-Tc-CAg">
+                                        <rect key="frame" x="300" y="0.0" width="75" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="24" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="More">
+                                            <color key="titleColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" red="0.027450980392156862" green="0.396078431372549" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didPressTab:" destination="A0o-1D-4Oh" eventType="touchUpInside" id="20C-5w-uD2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="XhI-5Y-I2K">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56917317708333337" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="XhI-5Y-I2K" id="8KQ-ev-RV2"/>
+                        <outletCollection property="buttons" destination="jac-0F-jau" collectionClass="NSMutableArray" id="ARM-jk-seY"/>
+                        <outletCollection property="buttons" destination="kgf-v4-YBp" collectionClass="NSMutableArray" id="Ofl-Uy-maH"/>
+                        <outletCollection property="buttons" destination="GWf-PL-aI0" collectionClass="NSMutableArray" id="fkf-QX-isy"/>
+                        <outletCollection property="buttons" destination="tQW-dz-Yr3" collectionClass="NSMutableArray" id="dbx-hJ-IgB"/>
+                        <outletCollection property="buttons" destination="06x-Tc-CAg" collectionClass="NSMutableArray" id="mCO-qv-D9e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4mQ-f4-dmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517" y="-852"/>
+        </scene>
+        <!--Image Detail View Controller-->
+        <scene sceneID="hJE-5j-3rm">
+            <objects>
+                <viewController id="acT-yq-n1j" customClass="ImageDetailViewController" customModule="facebook_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c7a-x4-Rvp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" id="Cx8-lK-3fG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Sqp-Qb-HXB">
+                                        <rect key="frame" x="318" y="28" width="51" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="doneButton"/>
+                                        <connections>
+                                            <action selector="didPressDone:" destination="acT-yq-n1j" eventType="touchUpInside" id="vvB-Kj-rTr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="d1V-5G-pAv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="563"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="wedding1" id="MN8-h1-9rq">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="563"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="Cx8-lK-3fG" id="pyr-9f-eWc"/>
+                        <outlet property="imageView" destination="MN8-h1-9rq" id="Wug-J3-oSR"/>
+                        <outlet property="scrollView" destination="d1V-5G-pAv" id="NqH-jv-oLR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lFW-KR-aMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-415.5" y="1015.5"/>
+        </scene>
+        <!--News Feed-->
+        <scene sceneID="eka-Jx-ikJ">
+            <objects>
+                <viewController storyboardIdentifier="NewsFeedViewController" id="HWd-Q7-6YK" customClass="NewsFeedViewController" customModule="facebook_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="azK-AM-MLU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1687"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="0E2-A7-g0s">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1687"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="home_feed-1" id="D6k-Fl-AHW">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1687"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="wedding1" id="UJY-T1-ox7">
+                                        <rect key="frame" x="4" y="98" width="182" height="181"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="wedding2" id="LDd-z4-2Ls">
+                                        <rect key="frame" x="4" y="283" width="182" height="181"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="wedding3" id="JS5-J2-VAJ">
+                                        <rect key="frame" x="189" y="98" width="181" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="wedding4" id="Rqj-hb-OLP">
+                                        <rect key="frame" x="189" y="221" width="181" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="wedding5" id="3Rn-PL-aey">
+                                        <rect key="frame" x="189" y="345" width="181" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="News Feed" image="feed_tab" id="gPU-5E-pkC"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1687"/>
+                    <connections>
+                        <outlet property="imageView" destination="D6k-Fl-AHW" id="DRJ-ct-Dn0"/>
+                        <outlet property="scrollView" destination="0E2-A7-g0s" id="Far-Tl-FXg"/>
+                        <outletCollection property="images" destination="UJY-T1-ox7" collectionClass="NSMutableArray" id="jrP-VO-Ujt"/>
+                        <outletCollection property="images" destination="LDd-z4-2Ls" collectionClass="NSMutableArray" id="fAU-s9-57Z"/>
+                        <outletCollection property="images" destination="JS5-J2-VAJ" collectionClass="NSMutableArray" id="CKf-gt-ZPo"/>
+                        <outletCollection property="images" destination="Rqj-hb-OLP" collectionClass="NSMutableArray" id="nqP-pv-zA7"/>
+                        <outletCollection property="images" destination="3Rn-PL-aey" collectionClass="NSMutableArray" id="Sj4-4K-CVO"/>
+                        <segue destination="acT-yq-n1j" kind="modal" identifier="ImageDetailSegue" id="mCb-YA-9ux"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yGE-fW-0As" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88.5" y="1525.5"/>
+        </scene>
+        <!--Requests-->
+        <scene sceneID="Zdm-D2-3ip">
+            <objects>
+                <viewController storyboardIdentifier="RequestsViewController" id="6wq-mr-QVP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xFw-i8-eEU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.32647026909722221" green="0.43438042534722221" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Requests" image="requests_tab" selectedImage="requests_tab" id="5PT-mM-s08"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2FX-ep-ka5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="615.625" y="1018.2866666666666"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="JLQ-kC-fJs">
+            <objects>
+                <viewController storyboardIdentifier="MessagesViewController" id="FZa-PE-3sO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="39M-8z-CZ7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.47300889756944442" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Messages" image="messages_tab" selectedImage="messages_tab" id="HdY-jb-aoe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="38f-d9-H8r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136.25" y="1018.2866666666666"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="8MC-jg-E2r">
+            <objects>
+                <tabBarController id="bB7-pI-gVJ" customClass="TabBarViewController" customModule="facebook_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="94X-13-5pk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="HWd-Q7-6YK" kind="relationship" relationship="viewControllers" id="LfY-Z0-65p"/>
+                        <segue destination="6wq-mr-QVP" kind="relationship" relationship="viewControllers" id="eJI-VU-8a7"/>
+                        <segue destination="FZa-PE-3sO" kind="relationship" relationship="viewControllers" id="MgQ-yY-xtW"/>
+                        <segue destination="zHG-pG-hwz" kind="relationship" relationship="viewControllers" id="k9l-FU-GZt"/>
+                        <segue destination="vW3-iF-iEK" kind="relationship" relationship="viewControllers" id="ac0-BF-FLU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MD1-qV-H2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="616" y="155"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="smR-xJ-gKi">
+            <objects>
+                <viewController storyboardIdentifier="NotificationsViewController" id="zHG-pG-hwz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ThY-hl-spQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.44986979166666669" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="notifications_tab" selectedImage="notifications_tab" id="I0b-Kr-RfI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMS-sN-456" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1647.5" y="1017.175"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="vei-iW-LJE">
+            <objects>
+                <viewController storyboardIdentifier="MoreViewController" id="vW3-iF-iEK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="epJ-RY-Qp5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.47054036458333331" green="0.71232096354166663" blue="0.3764919704861111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="More" image="more_tab" selectedImage="more_tab" id="Qvc-IL-JWZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="px2-Ps-GaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2161.25" y="1018.2866666666666"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="comment_btn" width="17" height="40"/>
+        <image name="doneButton" width="51" height="27"/>
+        <image name="feed_tab" width="27" height="27"/>
+        <image name="form_bg" width="295" height="95"/>
+        <image name="home_feed-1" width="320" height="1438"/>
+        <image name="login_button_enabled" width="293" height="52"/>
+        <image name="logo" width="174" height="43"/>
+        <image name="messages_tab" width="27" height="27"/>
+        <image name="more_tab" width="27" height="27"/>
+        <image name="notifications_tab" width="27" height="27"/>
+        <image name="requests_tab" width="27" height="27"/>
+        <image name="wedding1" width="320" height="480"/>
+        <image name="wedding2" width="480" height="320"/>
+        <image name="wedding3" width="480" height="320"/>
+        <image name="wedding4" width="480" height="320"/>
+        <image name="wedding5" width="480" height="320"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>

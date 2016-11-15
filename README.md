@@ -2,7 +2,7 @@
 
 The purpose of this homework is to leverage animations and gestures to transition between screens. We're going to use the techniques from this week to implement some interactions in Facebook.
 
-Time spent: `4 hours`
+Time spent: `5 hours`
 
 ### Features
 
@@ -15,12 +15,12 @@ Time spent: `4 hours`
 
 #### Optional
 
-- [ ] The full screen photo should be zoomable.
+- [X] The full screen photo should be zoomable.
 - [ ] The user should be able to page through the other photos in full screen mode.
 
 #### The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [X] Double tapping on full screen photo to zoom in or out, based on current zoom level
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
@@ -31,7 +31,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<a href="https://github.com/volovar/week-5-facebook/blob/master/demo/facebook-demo.gif" target="_blank"><img src='/demo/facebook-demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /></a>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

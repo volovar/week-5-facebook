@@ -2,7 +2,7 @@
 
 The purpose of this homework is to leverage animations and gestures to transition between screens. We're going to use the techniques from this week to implement some interactions in Facebook.
 
-Time spent: `5.5 hours`
+Time spent: `6.5 hours`
 
 ### Features
 
@@ -24,8 +24,8 @@ Time spent: `5.5 hours`
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
-2. 
+1. How other people handled the transition between the feed view and the image detail view (creating a new view, animating existing views, etc)
+2. Implementation details for the final optional, scrolling through other images
 
 ### Video Walkthrough 
 
@@ -37,4 +37,4 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+This project was fairly challenging, partially due to how many ways the milestones could be implemented. The tasks seem straightforward, but I had to do some digging and outside research (more than usual) to get things working in a way that I liked. 

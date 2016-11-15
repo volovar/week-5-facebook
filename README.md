@@ -31,7 +31,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<a href="https://github.com/volovar/week-5-facebook/blob/master/demo/facebook-demo.gif" target="_blank"><img src='/demo/facebook-demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /></a>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

@@ -13,11 +13,13 @@ class ImageDetailViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var backgroundView: UIView!
     var image: UIImage!
+    var isDismissed: Bool!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.delegate = self
+        isDismissed = false
         
+        scrollView.delegate = self
         scrollView.contentSize = imageView.frame.size
         
         let doubleTapGesture = UITapGestureRecognizer(target: self, action: #selector(handleDoubleTap))
@@ -39,7 +41,16 @@ class ImageDetailViewController: UIViewController, UIScrollViewDelegate {
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print("scroll offset: \(scrollView.contentOffset)")
+        if scrollView.zoomScale == scrollView.minimumZoomScale && scrollView.contentOffset.y < 0 && !isDismissed {
+            backgroundView.alpha = 1 + scrollView.contentOffset.y / 100
+        }
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if scrollView.zoomScale == scrollView.minimumZoomScale && scrollView.contentOffset.y < -50 {
+            isDismissed = true
+            dismiss(animated: true, completion: nil)
+        }
     }
     
     func handleDoubleTap() {
